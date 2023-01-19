@@ -7,6 +7,38 @@
 .container{
     padding: 0 180px;
 }
+
+
+
+@media only screen and (max-width:480px) {
+  .container{
+padding: 0 0;
+  }
+  .list-style{
+    margin-left: 0;
+  }
+  .list{
+flex-direction: column;
+justify-content: center;
+  }
+  #nav-flex{
+    flex-direction: column;
+    justify-content: center;
+  }
+ 
+.last{
+padding-left: 230px;
+ }
+ .btn{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  /* margin-left: 50px; */
+ }
+ .fa-user{
+  margin-left: 0px;
+  padding: 0;
+ }
+}
 #navbar{
     background-color: #292E3C;
     padding-top: 30px;
@@ -36,7 +68,8 @@
     letter-spacing: 1px;
 }
 .last{
- margin: 0 20px 0 230px   
+ padding: 0 20px 0 230px;
+ display: flex;
 }
 .btn{
     border: 1px solid #2b70fa;
@@ -72,7 +105,7 @@
     margin-bottom: 25px;
 }
 .p-blue{
-    color: blue;
+    color:#2196F3;
 }
 .p-white{
     color: white;
@@ -127,6 +160,31 @@
     padding-bottom: 50px;
 }
 
+@media only screen and (max-width:480px) {
+
+  #hero-flex{
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px ;
+  }
+ 
+  #img-flex{
+    flex-direction: column;
+  }
+  #android-btn, #ios-btn{
+    margin-bottom: 20px;
+    margin-left: 70px;
+  
+  }
+ 
+  #second-img{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+}
+
 /* Designed with section  */
 #design{
     background-color: black;
@@ -157,6 +215,7 @@
     animation-fill-mode: both;   
    
 }
+
 @keyframes fadeInDown {
     0% {
        opacity: 0;
@@ -241,7 +300,25 @@
 .card-p2-style{
     padding-bottom: 20px;
 }
+@media only screen and (max-width:480px) {
+  #design{
 
+    padding: 100px 80px;
+}
+  #h1-style{
+    font-size: 30px;
+
+
+  }
+  #cards-flex{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card{
+margin-bottom: 20px;
+
+  }
+}
 
 /* Conversation section  */
 .conversation{
@@ -329,6 +406,20 @@ background-color: #2b70fa;
     }
   }
 
+  @media only screen and (max-width:480px) {
+    .conversation{
+      padding: 0 20px;
+    }
+    .conv-flex{
+      flex-direction: column;
+    }
+   
+    #feature-img{
+      width: 390px;
+      height: 480px;
+      margin-bottom: 20px;
+    }
+  }
   /* Traffic section  */
   .traffic{
     background-color: #292E3C;
@@ -344,6 +435,7 @@ background-color: #2b70fa;
     display: flex;
     margin-left: 15px;
   }
+ 
  .fa-solid2{
     height: 20px;
     width: 40px;
@@ -399,7 +491,18 @@ background-color: #2b70fa;
     color: #2b70fa;
     transition: all 0.7s ease
  }
+ @media only screen and (max-width:480px){
+  .traffic{
+    padding: 120px 20px;
+  }
+  .traffic-flex{
+    flex-direction: column;
+  }
+  .btn2{
+    margin-bottom: 30px;
+  }
 
+}
  /* Carousel Start  */
  
 .carousel {
@@ -557,6 +660,7 @@ background-color: #2b70fa;
     padding-bottom: 20px;
  
 }
+
 .para-style{
     color: white;
     text-align: center;
@@ -575,13 +679,7 @@ background-color: #2b70fa;
     animation-duration: 2s;
     animation-fill-mode: both;
 }
-.magic{
-    width: 100%;
-    transition: all 0.5s ease-out;
-}
-.magic:hover{
-    transform: scale(0.98);
-}
+
 .member-btn{
     color: white;
     background-color: #292E3C;
@@ -598,6 +696,21 @@ background-color: #2b70fa;
     background-color: #2b70fa;
     color: white;
 }
+@media only screen and (max-width:480px) {
+  .member-flex{
+    flex-direction: column;
+  margin-left: 45px;
+  }
+  .head-style{
+    padding-top: 30px;
+    font-size: 40px;
+  }
+  .member-btn{
+    position: relative;
+    bottom: 30px;
+    left: 80px;
+  }
+}
 
 /* Plan section  */
 .plan-container{
@@ -607,6 +720,7 @@ background-color: #2b70fa;
 .all{
     text-align: center;
 }
+
 .switch {
     position: relative;
     display: inline-block;
@@ -721,6 +835,23 @@ background-color: #2b70fa;
     background-color: tomato;
 
   }
+  @media only screen and (max-width:480px){
+    .plan-container{
+      padding: 0;
+    }
+    .flexbox{
+      flex-direction: column;
+      justify-content: center;
+    }
+    .plan-card{
+      margin-bottom: 30px;
+      position: relative;
+      right: 32px;
+    }
+  }
+
+
+
 
   /* Accordion styles */
   .ac-container{
@@ -870,6 +1001,24 @@ background-color: #2b70fa;
   .ul-class .li-class .class-input[type=checkbox]:checked ~ i:after {
     transform: translate(-2px, 0) rotate(-45deg);
   }
+  @media only screen and (max-width:480px){
+    .ac-container{
+      padding: 2%;
+    }
+.ac-flex{
+  flex-direction: column;
+}
+
+.ul-class .li-class{
+  position: relative;
+  left: 10px;
+  width: 350px;
+  margin-top: 0;
+}
+  }
+  .h2-style{
+    font-size: 15px;
+  }
 
 
 /* Latest blog start  */
@@ -884,10 +1033,7 @@ background-color: #2b70fa;
     padding: 0 10%;
 
 }
-.blog-img{
-    border-radius: 6px;
 
-}
 .dot{
     font-size: 50px;
     color:#2196F3;
@@ -910,6 +1056,22 @@ background-color: #2b70fa;
     text-decoration: none;
     color: white;
 }
+@media only screen and (max-width:480px){
+  .blog-flex{
+    flex-direction: column;
+    padding: 0px 10px;
+  }
+
+  .blog-img{
+    padding-top: 100px;
+  }
+}
+.blog-img{
+    border-radius: 6px;
+
+}
+
+
 
 /* contact start  */
 .bg-img{
@@ -924,6 +1086,8 @@ background-color: #2b70fa;
     display: flex;
     justify-content:space-evenly ;
 }
+
+
 .head-project{
     color: white;
     font-size: 50px;
@@ -953,6 +1117,34 @@ background-color: #2b70fa;
     border: none;
     font-size: 15px;
 }
+@media only screen and (max-width:480px){
+  
+  .thumb-img{
+    display: none;
+  }
+  .bg-img{
+    width: 100%;
+    height: 500px;
+  }
+  .head-project{
+    padding: 70px 0px 0 10px;
+  }
+  .p-left{
+    padding: 0 10px;
+  }
+  .con-flex{
+    flex-direction: column;
+  }
+  .mailbox{
+    width: 120px;
+    margin-left: 10px;
+  }
+  .sub-btn{
+    width: 200px;
+    margin-left: 10px;
+  }
+}
+
 
 /* Footer  */
 .footer{
@@ -985,6 +1177,36 @@ background-color: #2b70fa;
     padding: 2% 5%;
 }
 
+@media only screen and (max-width:480px){
+  .footer-flex{
+    flex-direction: column;
+    justify-content: center;
+  }
+.footer{
+  padding: 10% 0;
+}
+.app{
+  text-align: center;
+margin-bottom: 40px;
+
+}
+.ul-remove{
+  padding-left: 0;
+}
+.middle{
+  margin-left: 0;
+}
+.btn-flex{
+  flex-direction: column;
+
+}
+.class-hr{
+  position: relative;
+  right: 50px;
+  width: 10px;
+}
+}
+
 
 /* scroll bar  */
 
@@ -1008,7 +1230,12 @@ background-color: #2b70fa;
  
   }
 
-
+  @media only screen and (max-width:480px){
+.top{
+  margin-left: 300px;
+}
+  
+}
 
 
 
