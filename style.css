@@ -1,4 +1,3 @@
-
 *{
     margin: 0px;
     font-family: 'Roboto', sans-serif;
@@ -6,38 +5,6 @@
 }
 .container{
     padding: 0 180px;
-}
-
-
-
-@media only screen and (max-width:480px) {
-  .container{
-padding: 0 0;
-  }
-  .list-style{
-    margin-left: 0;
-  }
-  .list{
-flex-direction: column;
-justify-content: center;
-  }
-  #nav-flex{
-    flex-direction: column;
-    justify-content: center;
-  }
- 
-.last{
-padding-left: 230px;
- }
- .btn{
-  margin-top: 10px;
-  margin-bottom: 20px;
-  /* margin-left: 50px; */
- }
- .fa-user{
-  margin-left: 0px;
-  padding: 0;
- }
 }
 #navbar{
     background-color: #292E3C;
@@ -54,12 +21,10 @@ padding-left: 230px;
 .list{
     display: flex;
     list-style-type: none;
-    align-items: center;
-   
+    align-items: center;   
 }
 .list-style{
     margin-left: 50px;
-  
 }
 .listing{
     color: white;
@@ -87,6 +52,48 @@ padding-left: 230px;
     color: #2b70fa;
     transition: all 0.7s ease
 }
+
+
+@media only screen and (max-width:480px) {
+
+  .container{
+  padding: 0 0;
+  }
+  #logo-img{
+  margin-bottom: 20px;
+  }
+  .list-style{
+    margin-left: 0;
+  }
+  .listing{
+    position: relative;
+    right: 30px;
+  }
+  .list{
+  flex-direction: column;
+  justify-content: center;
+  }
+  #nav-flex{
+  flex-direction: column;
+  justify-content: center;
+  }
+.last{
+position: relative;
+right: 110px;
+ }
+ .btn{
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+ }
+ .fa-user{
+  position: relative;
+  right: 30px;
+  margin-left: 0px;
+  padding: 0;
+ }
+}
+
 
 
 /* Hero section */
@@ -160,6 +167,7 @@ padding-left: 230px;
     padding-bottom: 50px;
 }
 
+
 @media only screen and (max-width:480px) {
 
   #hero-flex{
@@ -184,6 +192,8 @@ padding-left: 230px;
     margin-top: 20px;
   }
 }
+
+
 
 /* Designed with section  */
 #design{
@@ -319,6 +329,8 @@ margin-bottom: 20px;
 
   }
 }
+
+
 
 /* Conversation section  */
 .conversation{
@@ -503,6 +515,10 @@ background-color: #2b70fa;
   }
 
 }
+
+
+
+
  /* Carousel Start  */
  
 .carousel {
@@ -647,6 +663,8 @@ background-color: #2b70fa;
   }
 
 
+
+
 /* Members section  */
 .member-flex{
     display: flex;
@@ -711,6 +729,8 @@ background-color: #2b70fa;
     left: 80px;
   }
 }
+
+
 
 /* Plan section  */
 .plan-container{
@@ -1021,6 +1041,7 @@ background-color: #2b70fa;
   }
 
 
+  
 /* Latest blog start  */
 .blog-container{
     background-color: #292E3C;
