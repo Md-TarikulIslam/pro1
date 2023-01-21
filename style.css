@@ -2,6 +2,7 @@
     margin: 0px;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+
 }
 .container{
     padding: 0 180px;
@@ -37,6 +38,7 @@
  display: flex;
 }
 .btn{
+ 
     border: 1px solid #2b70fa;
     background-color: #2b70fa;
     font-size: 15px;
@@ -82,6 +84,8 @@ position: relative;
 right: 110px;
  }
  .btn{
+  position: relative;
+  right: 28px;
   margin-top: 10px;
   margin-bottom: 20px;
 
